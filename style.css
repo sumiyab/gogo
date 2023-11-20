@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: black;
+  --secondary: brown;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.image {
+  width: 119px;
+  height: 38px;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.menu-items p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.menu-hover-item-1 {
+  display: none;
+  position: absolute;
+}
+.menu-hover {
+  display: flex;
+  position: relative;
+}
+.menu-hover:hover .menu-hover-item-1 {
+  background-color: white;
+  display: block;
+  top: 40px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+.menu-hover-item-1 ul {
+  font-size: 20px;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+  gap: 15px;
+}
+.menu-items i {
+  font-size: 15px;
+}
+ul li {
+  margin: 20px 0;
+  color: darkblue;
+}
+.header-stats {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.header-stats-title {
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: end;
+}
+.header-stats-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+.text-green {
+  color: #2adb00;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-right: 15px;
+}
+.stats img {
+  margin-right: 8px;
+}
+
+/* body heseg */
+.hero-banner {
+  display: flex;
+  width: 1100px;
+  height: 385px;
+  background: linear-gradient(
+    90deg,
+    #f4f4f4 7%,
+    hsla(0, 0%, 100%, 0.220348) 17%
+  );
+  border-radius: 10px;
+}
+.hero-banner-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/11/312952-16112023-1700121324-1502264058-2023-51.jpg");
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.hero-banner-image div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.hero-banner-image i {
+  margin-left: 10px;
+}
+.hero-banner-image div:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.hero-banner-image:hover {
+  background-size: 120%;
+  transition: background-size 0.3s ease-in-out;
+}
+.hero-banner span {
+  padding: 8px 15px;
+  border-radius: 100px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(129deg, #c40097, #d6710b);
+}
+
+.hero-banner h2 {
+  line-height: 36px;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+.hero-banner-text {
+  padding: 40px;
+}
+
+/* head cards */
+.card-head {
+  width: 264px;
+  height: 175px;
+}
+.card-head-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.card-head-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2023/11/313015-19112023-1700324774-1757184105-8cA3-H_GKYDKjfPMB86f1A.jpg");
+  background-position: center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.card-head-image div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.383);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-head h2 {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.card-head-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+.card-head-icons i {
+  margin-right: 8px;
+  color: #8e8e8e;
+}
+.card-head-icons div {
+  color: #8e8e8e;
+}
+.card-head-icons img {
+  margin-right: 8px;
+}
+
+.card-head-image div:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-head-image:hover {
+  background-size: 120%;
+  transition: background-size 0.3s ease-in-out;
+}
